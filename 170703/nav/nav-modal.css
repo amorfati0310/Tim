@@ -7,7 +7,14 @@ html, body{
 html{
     font-size: 16px;
 }
-
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+.modalon {
+  background-color: #000;
+}
 h1,ul,li{
   padding: 0;
   margin: 0;
@@ -23,6 +30,7 @@ img {
 header {
   display: flex;
   align-items: center;
+  height: 48px;
 }
 
 h1{
@@ -45,6 +53,7 @@ ul {
   margin-right: 1em;
   text-decoration: none;
   cursor: pointer;
+  line-height: 48px;
 }
 
 .login-signup-box{
@@ -57,16 +66,36 @@ ul {
   /*width: 60px;*/
   /*width를 %로 하면 하나만 내려가서..*/
   height: auto;
-  
+
 }
 
 header {
   background-color: #ee6e73;
 }
 
+.modal-box{
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(28, 27, 27,0.7);
+}
+.off{
+  display: none;
+}
 
+.login-box {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 30%;
+  height: 70%;
+  transform: translate(-50%);
+  background-color: #fefefe;
 
-
+}
 
 
 /*header ,nav, ul{

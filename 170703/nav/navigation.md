@@ -78,6 +78,15 @@ go라는(작명.. 이름 다시 지어야 될듯 ) box에 nav 와 함께 flex를
 
 이제 여기서
 
+이슈
+새로 추가한 login signup 링크에 height값을 헤더바랑높이를 맞추고 싶은데
+
+방법 1
+헤더 값에 height를 주고
+a에 line-height값으로 맞춘다.
+
+방법 2
+
 + modal과
 + dropdown을 한 번 구현해볼 생각이다.
 
