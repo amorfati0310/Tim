@@ -34,14 +34,14 @@ header {
 }
 
 h1{
-  width: 30%;
+  width: 10%;
 }
 
 .go {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 70%;
+  width: 90%;
 }
 
 .nav-items {
@@ -55,17 +55,19 @@ h1{
   cursor: pointer;
   line-height: 48px;
 }
-
+.nav-link {
+  color: #fff;
+}
 .login-signup-box{
   display: flex;
   margin-left: 18px;
-
+  background-color: #f49507;
 }
 .login, .signup {
-  background-color: #f49507;
   /*width: 60px;*/
   /*width를 %로 하면 하나만 내려가서..*/
   height: auto;
+  color: #000;
 
 }
 
@@ -95,6 +97,7 @@ header {
   transform: translate(-50%);
   background-color: #fefefe;
   border-radius: 5px;
+  max-width: 450px;
 
 }
 
@@ -132,10 +135,12 @@ nav{
 }
 .btn-login{
   background-color: #db5353;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
-.btn-signup{
+.btn-signup {
   background-color: #0e0f13;
+  position: fixed;
+  bottom: 0;
 }
 .google-login, .facebook-login{
   text-decoration: none;
@@ -187,6 +192,19 @@ input {
   background: none;
   font: 16px/1.4 "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+}
+/*모달 닫기 버튼*/
+.btn-modal-close{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  width: 48px;
+  height: 48px;
+  /*border: none;
+  cursor: pointer;
+  overflow: visible;
+  white-space: nowrap;*/
 }
 
 
